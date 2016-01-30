@@ -9,7 +9,7 @@
 namespace Wubs\Trakt\Response\Handlers\Comments;
 
 
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use Illuminate\Support\Collection;
 use Wubs\Trakt\Contracts\ResponseHandler;
 use Wubs\Trakt\Response\Comment;
@@ -21,10 +21,10 @@ class CommentHandler extends AbstractResponseHandler implements ResponseHandler
 
     /**
      * @param ResponseInterface $response
-     * @param \GuzzleHttp\ClientInterface|GuzzleHttp\ClientInterface $client
+     * @param \GuzzleHttp5\ClientInterface|GuzzleHttp5\ClientInterface $client
      * @return Comment|\Wubs\Trakt\Response\Comment[]|Collection
      */
-    public function handle(ResponseInterface $response, \GuzzleHttp\ClientInterface $client)
+    public function handle(ResponseInterface $response, \GuzzleHttp5\ClientInterface $client)
     {
         $response = $this->getJson($response);
 
@@ -39,10 +39,10 @@ class CommentHandler extends AbstractResponseHandler implements ResponseHandler
 
     /**
      * @param array $response
-     * @param \GuzzleHttp\ClientInterface $client
+     * @param \GuzzleHttp5\ClientInterface $client
      * @return Comment[]\Collection
      */
-    private function createComments($response, \GuzzleHttp\ClientInterface $client)
+    private function createComments($response, \GuzzleHttp5\ClientInterface $client)
     {
         $map = [];
         foreach ($response as $comment) {

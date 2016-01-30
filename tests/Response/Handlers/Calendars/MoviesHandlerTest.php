@@ -1,7 +1,7 @@
 <?php
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Message\RequestInterface;
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\ClientInterface;
+use GuzzleHttp5\Message\RequestInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use Wubs\Trakt\Response\Calendar\Calendar;
 use Wubs\Trakt\Response\Calendar\Day;
 use Wubs\Trakt\Response\Handlers\Calendars\MoviesHandler;

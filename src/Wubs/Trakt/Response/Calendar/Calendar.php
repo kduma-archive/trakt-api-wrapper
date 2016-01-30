@@ -9,7 +9,7 @@
 namespace Wubs\Trakt\Response\Calendar;
 
 
-use GuzzleHttp\ClientInterface;
+use GuzzleHttp5\ClientInterface;
 use League\OAuth2\Client\Token\AccessToken;
 use Wubs\Trakt\Request\Parameters\Type;
 

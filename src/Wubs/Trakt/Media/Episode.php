@@ -9,7 +9,7 @@
 namespace Wubs\Trakt\Media;
 
 
-use GuzzleHttp\ClientInterface;
+use GuzzleHttp5\ClientInterface;
 use League\OAuth2\Client\Token\AccessToken;
 
 class Episode extends Media

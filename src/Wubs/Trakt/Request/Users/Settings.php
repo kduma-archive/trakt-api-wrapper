@@ -1,7 +1,7 @@
 <?php namespace Wubs\Trakt\Request\Users;
 
-use GuzzleHttp\Message\Response;
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\Message\Response;
+use GuzzleHttp5\Message\ResponseInterface;
 use League\OAuth2\Client\Token\AccessToken;
 use Wubs\Trakt\Request\AbstractRequest;
 use Wubs\Trakt\Request\RequestType;

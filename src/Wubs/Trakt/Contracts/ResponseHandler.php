@@ -1,6 +1,6 @@
 <?php namespace Wubs\Trakt\Contracts;
 
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use League\OAuth2\Client\Token\AccessToken;
 
 
@@ -12,7 +12,7 @@ use League\OAuth2\Client\Token\AccessToken;
  */
 interface ResponseHandler
 {
-    public function handle(ResponseInterface $response, \GuzzleHttp\ClientInterface $client);
+    public function handle(ResponseInterface $response, \GuzzleHttp5\ClientInterface $client);
 
     public function setClientId($id);
 

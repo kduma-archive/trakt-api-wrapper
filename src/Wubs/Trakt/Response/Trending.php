@@ -9,7 +9,7 @@
 namespace Wubs\Trakt\Response;
 
 
-use GuzzleHttp\ClientInterface;
+use GuzzleHttp5\ClientInterface;
 use League\OAuth2\Client\Token\AccessToken;
 use Wubs\Trakt\Media\Movie;
 

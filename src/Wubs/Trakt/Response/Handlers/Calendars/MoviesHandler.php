@@ -9,7 +9,7 @@
 namespace Wubs\Trakt\Response\Handlers\Calendars;
 
 
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use Wubs\Trakt\Contracts\ResponseHandler;
 use Wubs\Trakt\Request\Parameters\Days;
 use Wubs\Trakt\Request\Parameters\Type;
@@ -23,10 +23,10 @@ class MoviesHandler extends AbstractResponseHandler implements ResponseHandler
 
     /**
      * @param ResponseInterface $response
-     * @param \GuzzleHttp\ClientInterface|GuzzleHttp\ClientInterface $client
+     * @param \GuzzleHttp5\ClientInterface|GuzzleHttp5\ClientInterface $client
      * @return Calendar
      */
-    public function handle(ResponseInterface $response, \GuzzleHttp\ClientInterface $client)
+    public function handle(ResponseInterface $response, \GuzzleHttp5\ClientInterface $client)
     {
         $json = $this->getJson($response);
 

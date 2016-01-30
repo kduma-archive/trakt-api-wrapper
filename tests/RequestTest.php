@@ -1,6 +1,6 @@
 <?php
 use Carbon\Carbon;
-use GuzzleHttp\ClientInterface;
+use GuzzleHttp5\ClientInterface;
 use Wubs\Trakt\Request\Calendars\My\Movies;
 use Wubs\Trakt\Request\Parameters\Days;
 use Wubs\Trakt\Request\Parameters\StartDate;

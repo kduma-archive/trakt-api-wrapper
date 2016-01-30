@@ -1,5 +1,5 @@
 <?php
-use GuzzleHttp\ClientInterface;
+use GuzzleHttp5\ClientInterface;
 use Wubs\Trakt\Media\Media;
 use Wubs\Trakt\Media\Show;
 use Wubs\Trakt\Request\Parameters\Type;

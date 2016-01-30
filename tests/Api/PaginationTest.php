@@ -1,7 +1,7 @@
 <?php
 
 
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use Illuminate\Support\Collection;
 use League\OAuth2\Client\Token\AccessToken;
 use Wubs\Trakt\Api\Movies;
@@ -44,10 +44,10 @@ class PaginationTestResponseHandler extends AbstractResponseHandler implements R
 
     /**
      * @param ResponseInterface $response
-     * @param \GuzzleHttp\ClientInterface $client
+     * @param \GuzzleHttp5\ClientInterface $client
      * @return ResponseInterface
      */
-    public function handle(ResponseInterface $response, \GuzzleHttp\ClientInterface $client)
+    public function handle(ResponseInterface $response, \GuzzleHttp5\ClientInterface $client)
     {
         return $response;
     }

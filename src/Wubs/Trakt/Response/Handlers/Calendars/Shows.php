@@ -9,7 +9,7 @@
 namespace Wubs\Trakt\Response\Handlers\Calendars;
 
 
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use Wubs\Trakt\Media\Episode;
 use Wubs\Trakt\Contracts\ResponseHandler;
 use Wubs\Trakt\Request\Parameters\Type;
@@ -20,10 +20,10 @@ class Shows extends AbstractResponseHandler implements ResponseHandler
 {
     /**
      * @param ResponseInterface $response
-     * @param \GuzzleHttp\ClientInterface|GuzzleHttp\ClientInterface $client
+     * @param \GuzzleHttp5\ClientInterface|GuzzleHttp5\ClientInterface $client
      * @return \Wubs\Trakt\Response\Calendar\Day[]
      */
-    public function handle(ResponseInterface $response, \GuzzleHttp\ClientInterface $client)
+    public function handle(ResponseInterface $response, \GuzzleHttp5\ClientInterface $client)
     {
         $json = $this->getJson($response);
 

@@ -10,7 +10,7 @@ namespace Wubs\Trakt\Response;
 
 
 use Carbon\Carbon;
-use GuzzleHttp\ClientInterface;
+use GuzzleHttp5\ClientInterface;
 use League\OAuth2\Client\Token\AccessToken;
 use Wubs\Trakt\Request\Comments\Delete;
 

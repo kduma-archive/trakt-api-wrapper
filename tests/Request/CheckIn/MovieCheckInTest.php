@@ -1,7 +1,7 @@
 <?php
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Message\RequestInterface;
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\ClientInterface;
+use GuzzleHttp5\Message\RequestInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use Wubs\Trakt\Media\Movie;
 use Wubs\Trakt\Request\CheckIn\Create;
 use Wubs\Trakt\Request\Parameters\Query;

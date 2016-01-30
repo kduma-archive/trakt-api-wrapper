@@ -1,5 +1,5 @@
 <?php
-use GuzzleHttp\Client;
+use GuzzleHttp5\Client;
 use Wubs\Trakt\Auth\Auth;
 use Wubs\Trakt\Auth\TraktProvider;
 use Wubs\Trakt\Trakt;

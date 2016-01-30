@@ -8,8 +8,8 @@
 
 namespace Wubs\Trakt\Response\Handlers;
 
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\ClientInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use Wubs\Trakt\Contracts\ResponseHandler;
 use Wubs\Trakt\Request\Parameters\AbstractParameter;
 
@@ -18,11 +18,11 @@ class DefaultDeleteHandler extends AbstractResponseHandler implements ResponseHa
 
     /**
      * @param ResponseInterface $response
-     * @param ClientInterface|GuzzleHttp\ClientInterface $client
+     * @param ClientInterface|GuzzleHttp5\ClientInterface $client
      * @return bool
      * @internal param ClientInterface $client
      */
-    public function handle(ResponseInterface $response, \GuzzleHttp\ClientInterface $client)
+    public function handle(ResponseInterface $response, \GuzzleHttp5\ClientInterface $client)
     {
         return ($response->getStatusCode() === 204);
     }

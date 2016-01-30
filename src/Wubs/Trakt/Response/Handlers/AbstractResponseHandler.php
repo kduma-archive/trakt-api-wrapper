@@ -9,8 +9,8 @@
 namespace Wubs\Trakt\Response\Handlers;
 
 
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\ClientInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use League\OAuth2\Client\Token\AccessToken;
 
 class AbstractResponseHandler

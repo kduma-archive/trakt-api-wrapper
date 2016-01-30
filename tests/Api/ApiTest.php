@@ -2,9 +2,9 @@
 
 
 use Carbon\Carbon;
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Message\RequestInterface;
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\ClientInterface;
+use GuzzleHttp5\Message\RequestInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use Mockery\Mock;
 use Wubs\Trakt\Api;
 use Wubs\Trakt\Auth\Auth;

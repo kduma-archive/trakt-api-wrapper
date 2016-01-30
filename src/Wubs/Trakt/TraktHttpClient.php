@@ -4,7 +4,7 @@
 namespace Wubs\Trakt;
 
 
-use GuzzleHttp\Client;
+use GuzzleHttp5\Client;
 
 class TraktHttpClient
 {

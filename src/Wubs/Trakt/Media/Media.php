@@ -9,7 +9,7 @@
 namespace Wubs\Trakt\Media;
 
 
-use GuzzleHttp\ClientInterface;
+use GuzzleHttp5\ClientInterface;
 use Illuminate\Contracts\Support\Arrayable;
 use League\OAuth2\Client\Token\AccessToken;
 use Wubs\Trakt\Request\AbstractRequest;

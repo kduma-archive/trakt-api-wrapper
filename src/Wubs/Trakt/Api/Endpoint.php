@@ -4,7 +4,7 @@
 namespace Wubs\Trakt\Api;
 
 
-use GuzzleHttp\ClientInterface;
+use GuzzleHttp5\ClientInterface;
 use Illuminate\Support\Collection;
 use Wubs\Trakt\Request\AbstractRequest;
 

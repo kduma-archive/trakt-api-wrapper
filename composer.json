@@ -1,4 +1,10 @@
 {
+  "repositories": [
+      {
+          "type": "composer",
+          "url": "http://composer.52.2.112.68.xip.io"
+      }
+  ],
   "name": "wubs/trakt",
   "description": "Trakt API wrapper",
   "authors": [
@@ -12,9 +18,9 @@
     "php": ">=5.4.7",
     "illuminate/support": "~5.1.1",
     "nesbot/carbon": "~1",
-    "guzzlehttp/guzzle": "~5",
     "league/oauth2-client": "~0.8",
-    "league/url": "^3.3"
+    "league/url": "^3.3",
+    "guzzlehttp/guzzle5": "5.3.x-dev#35220f666cfe31449288b01cc638ebb09ddb2131"
   },
   "require-dev": {
     "vlucas/phpdotenv": "^2.0",

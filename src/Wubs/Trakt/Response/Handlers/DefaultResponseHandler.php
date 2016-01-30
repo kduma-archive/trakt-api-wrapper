@@ -9,8 +9,8 @@
 namespace Wubs\Trakt\Response\Handlers;
 
 
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\ClientInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use Illuminate\Support\Collection;
 use Wubs\Trakt\Contracts\ResponseHandler;
 
@@ -18,11 +18,11 @@ class DefaultResponseHandler extends AbstractResponseHandler implements Response
 {
     /**
      * @param ResponseInterface $response
-     * @param ClientInterface|GuzzleHttp\ClientInterface $client
+     * @param ClientInterface|GuzzleHttp5\ClientInterface $client
      * @return Collection
      * @internal param ClientInterface $client
      */
-    public function handle(ResponseInterface $response, \GuzzleHttp\ClientInterface $client)
+    public function handle(ResponseInterface $response, \GuzzleHttp5\ClientInterface $client)
     {
         $json = $this->getJson($response);
 

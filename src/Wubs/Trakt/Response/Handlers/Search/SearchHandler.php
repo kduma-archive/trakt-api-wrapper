@@ -9,8 +9,8 @@
 namespace Wubs\Trakt\Response\Handlers\Search;
 
 
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\ClientInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use Illuminate\Support\Collection;
 use Wubs\Trakt\Exception\MediaTypeNotSupportedException;
 use Wubs\Trakt\Media\Episode;
@@ -23,7 +23,7 @@ use Wubs\Trakt\Response\Handlers\AbstractResponseHandler;
 class SearchHandler extends AbstractResponseHandler implements ResponseHandler
 {
 
-    public function handle(ResponseInterface $response, \GuzzleHttp\ClientInterface $client)
+    public function handle(ResponseInterface $response, \GuzzleHttp5\ClientInterface $client)
     {
         $items = $this->getJson($response);
 

@@ -8,10 +8,10 @@
 
 namespace Wubs\Trakt\Request;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Exception\ServerException;
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\Client;
+use GuzzleHttp5\ClientInterface;
+use GuzzleHttp5\Exception\ServerException;
+use GuzzleHttp5\Message\ResponseInterface;
 use Illuminate\Support\Collection;
 use League\OAuth2\Client\Token\AccessToken;
 use Wubs\Trakt\Contracts\ResponseHandler;
@@ -276,7 +276,7 @@ abstract class AbstractRequest
 
     /**
      * @param ClientInterface $client
-     * @return \GuzzleHttp\Message\RequestInterface
+     * @return \GuzzleHttp5\Message\RequestInterface
      */
     private function createRequest(ClientInterface $client)
     {

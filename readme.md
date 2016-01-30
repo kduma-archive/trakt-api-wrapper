@@ -50,7 +50,7 @@ $trakt = new Trakt($auth);
 ```
 
 If you want to mock http request, you can give `Trakt` a second argument that must implement 
-`GuzzleHttp\ClientInterface`. When you don't pass one, the real implementation is used to send requests to Trakt.
+`GuzzleHttp5\ClientInterface`. When you don't pass one, the real implementation is used to send requests to Trakt.
 
 Once you've created the Trakt object, you should register it inside your IoC container, so you only have to write the
  code that instantiates the Trakt class once.

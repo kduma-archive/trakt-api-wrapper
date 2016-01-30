@@ -1,8 +1,8 @@
 <?php
 use Carbon\Carbon;
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Message\RequestInterface;
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\ClientInterface;
+use GuzzleHttp5\Message\RequestInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use Wubs\Trakt\Contracts\ResponseHandler;
 use Wubs\Trakt\Request\AbstractRequest;
 use Wubs\Trakt\Request\Calendars\My;
@@ -97,7 +97,7 @@ class AbstractRequestTest extends PHPUnit_Framework_TestCase
 class MyResponseHandler extends AbstractResponseHandler implements ResponseHandler
 {
 
-    public function handle(ResponseInterface $response, \GuzzleHttp\ClientInterface $client)
+    public function handle(ResponseInterface $response, \GuzzleHttp5\ClientInterface $client)
     {
         return true;
     }

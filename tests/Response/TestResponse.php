@@ -1,9 +1,9 @@
 <?php
 
-use GuzzleHttp\Exception\ParseException;
-use GuzzleHttp\Message\ResponseInterface;
-use GuzzleHttp\Stream\StreamInterface;
-use GuzzleHttp\Utils;
+use GuzzleHttp5\Exception\ParseException;
+use GuzzleHttp5\Message\ResponseInterface;
+use GuzzleHttp5\Stream\StreamInterface;
+use GuzzleHttp5\Utils;
 
 class TestResponse implements ResponseInterface
 {

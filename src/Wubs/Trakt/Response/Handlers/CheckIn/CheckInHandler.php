@@ -9,8 +9,8 @@
 namespace Wubs\Trakt\Response\Handlers\CheckIn;
 
 
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\ClientInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use Wubs\Trakt\Contracts\ResponseHandler;
 use Wubs\Trakt\Response\CheckIn;
 use Wubs\Trakt\Response\Handlers\AbstractResponseHandler;

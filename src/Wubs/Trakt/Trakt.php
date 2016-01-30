@@ -4,7 +4,7 @@
 use Guzzle\Http\Exception\ClientErrorResponseException;
 use Guzzle\Http\Url;
 use Guzzle\Service\Client;
-use GuzzleHttp\ClientInterface;
+use GuzzleHttp5\ClientInterface;
 use League\OAuth2\Client\Provider\ProviderInterface;
 use League\OAuth2\Client\Token\AccessToken;
 use Wubs\Trakt\Api\Calendars;
@@ -25,7 +25,7 @@ use Wubs\Trakt\Auth\Auth;
 use Wubs\Trakt\Contracts\RequestInterface;
 use Wubs\Trakt\Exception\InvalidOauthRequestException;
 use Wubs\Trakt\Auth\TraktProvider;
-use Wubs\Trakt\Request\AbstractRequest;
+use Wubs\Trakt\Request\AbstractRequest
 
 class Trakt
 {

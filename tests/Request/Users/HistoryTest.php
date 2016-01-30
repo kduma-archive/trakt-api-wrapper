@@ -1,9 +1,9 @@
 <?php
 
 
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Message\RequestInterface;
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp5\ClientInterface;
+use GuzzleHttp5\Message\RequestInterface;
+use GuzzleHttp5\Message\ResponseInterface;
 use Wubs\Trakt\Request\Parameters\Type;
 use Wubs\Trakt\Request\Users\History;
 
