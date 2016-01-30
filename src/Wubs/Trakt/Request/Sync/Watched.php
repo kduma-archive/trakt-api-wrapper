@@ -35,4 +35,12 @@ class Watched extends AbstractRequest
     {
         return "sync/watched/:type";
     }
+
+    /**
+     * @return mixed
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
 }
