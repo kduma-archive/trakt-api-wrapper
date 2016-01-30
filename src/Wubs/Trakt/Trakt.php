@@ -25,7 +25,7 @@ use Wubs\Trakt\Auth\Auth;
 use Wubs\Trakt\Contracts\RequestInterface;
 use Wubs\Trakt\Exception\InvalidOauthRequestException;
 use Wubs\Trakt\Auth\TraktProvider;
-use Wubs\Trakt\Request\AbstractRequest
+use Wubs\Trakt\Request\AbstractRequest;
 
 class Trakt
 {
